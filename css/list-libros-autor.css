@@ -13,9 +13,9 @@ body{
 
 #list-libro-autor{
     width: 90%;
-    margin: 10px  auto;
+    margin: auto;
     display:grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(4, 25%);
     
     grid-column: 10px;
     
@@ -88,7 +88,7 @@ body{
     width: 90%;
     margin: 10px  auto;
     display:grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(3, 30%);
     
     grid-column: 10px;
   }
@@ -99,16 +99,16 @@ body{
     width: 90%;
     margin: 10px  auto;
     display:grid;
-    grid-template-columns: repeat(1, 50%);
+    grid-template-columns: repeat(2, 50%);
     grid-column: 10px;
   }
 }
-@media (max-width: 400px){
+@media (max-width: 300px){
   #list-libro-autor{
     width: 90%;
     margin: 10px  auto;
     display:grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column: 10px;
   }
 }
