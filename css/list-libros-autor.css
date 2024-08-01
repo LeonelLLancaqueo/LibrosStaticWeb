@@ -8,7 +8,9 @@ body{
   margin: 10px auto;
 }
 
-
+h2{
+  height: 60px;
+}
 
 
 #list-libro-autor{
