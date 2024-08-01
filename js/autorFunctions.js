@@ -129,7 +129,7 @@ function añadirAutor(nombre, nacionalidad, urlImage, descripcion){
 
     console.log("Añadiendo autor...");
 
-    fetch("http://localhost:8080/autor",{
+    fetch("https://bookshop-bfc6.onrender.com/autor",{
         method: 'POST',
         body: JSON.stringify(autor),
         headers:{
