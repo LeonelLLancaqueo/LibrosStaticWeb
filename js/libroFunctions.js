@@ -5,7 +5,7 @@ let idLibro= -1;
 let create= true;
 
 const nombreInput= document.getElementById("nombreInput");
-const generoInput= document.getElementById("listGeneroInput");
+const generoInput= document.getElementById("generoSelectForm");
 const autorInput= document.getElementById("listAutorInput");
 const urlInput= document.getElementById("urlInput");
 const descripcionInput= document.getElementById("descripcionInput");
