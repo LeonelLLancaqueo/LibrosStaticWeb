@@ -97,6 +97,9 @@ h2{
 }
 
 @media (max-width: 650px){
+  h2{
+    height: 90px;
+  }
   #list-libro-autor{
     width: 90%;
     margin: 10px  auto;
