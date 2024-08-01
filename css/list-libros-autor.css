@@ -80,17 +80,30 @@ body{
 }
 
 @media (max-width: 800px){
+  .card-libro img{
+    width: 100px;
+    height: 150px;
+  }
   #list-libro-autor{
     width: 90%;
     margin: 10px  auto;
     display:grid;
-    grid-template-columns: repeat(2, 25%);
+    grid-template-columns: repeat(2, 40%);
     
     grid-column: 10px;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
+  #list-libro-autor{
+    width: 90%;
+    margin: 10px  auto;
+    display:grid;
+    grid-template-columns: repeat(1, 50%);
+    grid-column: 10px;
+  }
+}
+@media (max-width: 400px){
   #list-libro-autor{
     width: 90%;
     margin: 10px  auto;
