@@ -261,9 +261,12 @@ function processListGenero(listGenero){
         let opcion= document.createElement("option");
         opcion.text= genero.nombre;
         opcion.value= genero.idGenero;    
+        let opcion2= document.createElement("option");
+        opcion.text= genero.nombre;
+        opcion.value= genero.idGenero;    
         
         selectSearchGenero.appendChild(opcion);
-        selectGeneroForm.appendChild(opcion);
+        selectGeneroForm.appendChild(opcion2);
     });
 }
 
