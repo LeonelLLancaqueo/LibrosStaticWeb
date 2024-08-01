@@ -262,8 +262,8 @@ function processListGenero(listGenero){
         opcion.text= genero.nombre;
         opcion.value= genero.idGenero;    
         let opcion2= document.createElement("option");
-        opcion.text= genero.nombre;
-        opcion.value= genero.idGenero;    
+        opcion2.text= genero.nombre;
+        opcion2.value= genero.idGenero;    
         
         selectSearchGenero.appendChild(opcion);
         selectGeneroForm.appendChild(opcion2);
