@@ -2,7 +2,7 @@
 
 async function register(){
     const user= document.getElementById("user").value;
-    const password= document.getElementById("password").value;
+    const password= document.getElementById("passwordInput").value;
     const requestUser= {"username": user, "password": password};
 
     await fetch("https://bookshop-bfc6.onrender.com/auth/register", {
