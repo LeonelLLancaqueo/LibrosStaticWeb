@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tabla.css">
+    <link rel="stylesheet" href="./css/form-create.css">
+    <link rel="stylesheet" href="./css/dialog-delete.css">
+    <link rel="stylesheet" href="./css/navegacion.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/searchSeaction.css">
+    <title>Generos</title>
+</head>
+<body>
+    <nav class="nav-inicio">
+        <ul>
+            <li><a href="./autorCrud.html">Autores</a></li>
+            <li><a href="./libroCrud.html">Libros</a></li>
+            <li><a href="./generoCrud.html">Generos</a></li>
+        </ul>
+        <ul id="ul-session">
+            <li id="login-li"><a href="./login.html">Iniciar sesion</a></li>
+            <li id="register-li"><a href="./register.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    
+    <table class="tabla-crud">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>descripcion</th>
+                <th><button class="button-create" onclick="abrirFormGenero()">Create</button></th>
+            </tr>
+        </thead>
+        <tbody id="bodyTablaGeneros"></tbody>
+    </table>
+    
+
+    <dialog id="dialog-form">
+        <div  class="form-create" hidden="true">
+            <h3>Añadir/Update Genero</h3>
+            <label for="">Nombre</label>
+            <input id="nombreInput" type="text">
+            <label for="">Descripcion</label>
+            <textarea id="descripcionInput" > </textarea>
+            <div class="form-container-button">
+                <button type="button" id="close-button" onclick="cerrarFormGenero()">Cerrar</button>
+                <button type="button" id="form-send-button" onclick="handleSendButtonForm()">Enviar</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="dialog-delete">
+        <label for="">¿Desea Eliminar?</label>
+        <div id="container-delete-button">
+            <button onclick="closeDeleteModal()">Cancelar</button>
+            <button onclick="onClickDeleteButton()" >Eliminar</button>
+        </div>
+        
+    </dialog>
+
+    <script src="./js/traerGeneros.js"></script> 
+    <script src="./js/generoFunctions.js"></script>
+    <script src="./js/session.js"></script>
+
+</body>
+</html>

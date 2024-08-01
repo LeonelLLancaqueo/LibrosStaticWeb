@@ -1,0 +1,35 @@
+
+
+.tabla-crud{ 
+    height: 0px;
+    margin:  20px auto;
+    color: antiquewhite;
+}
+.tabla-crud thead{
+    padding: 0px 10px; 
+}
+.tabla-crud thead tr th{
+    padding: 5px;
+}
+
+.tabla-crud tbody td{
+    text-align: center;    
+    padding: 5px 10px; 
+    border-bottom: 2px solid aliceblue;
+
+}
+.tabla-crud tbody td textarea{
+    padding: 5px 10px; 
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: 2px solid aliceblue;
+
+}
+.tabla-crud tbody button{
+    margin: 5px; 
+}
+
+ /* tableAutor*/
+

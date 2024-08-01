@@ -1,0 +1,32 @@
+#dialog-form{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+}
+.form-create {
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.form-create input{
+    margin: 10px 0px;
+}
+.form-create textarea{
+    margin: 10px 0px;
+    height: 60px;
+}
+.form-create select{
+    margin: 10px 0px;
+}
+.form-container-button{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+}
+
+.form-create button{
+    width: 60px;
+}

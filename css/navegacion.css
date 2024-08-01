@@ -1,0 +1,84 @@
+
+.nav-inicio {
+    width: 90%;
+    padding: 30px 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.nav-inicio  ul{
+    
+    display: flex;
+}
+
+.nav-inicio  li{
+    color:aliceblue;
+    list-style: none;
+    margin: 0px 5px;
+    padding: 10px 5px;
+    border-bottom: 1px solid;
+}
+
+.nav-inicio  li a{
+    color:aliceblue;
+    text-decoration: none;
+}
+.nav-inicio  li :hover{
+    opacity: 70%;
+}
+/*      PROFILE SETTING     */
+
+.profileSetting:hover{
+    opacity: 80%;
+}
+
+.listSetting{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    color: aliceblue;
+    visibility: hidden;
+}
+.listSetting li{
+    padding: 10px 25px;
+    background-color: brown;
+    border: 2px solid black;
+
+}
+
+.listSetting li:hover{
+    opacity: 80%;
+}
+
+/*carritoList*/
+.right-nav{
+    display: flex;
+    flex-direction: column;
+}
+#carrito:hover{
+    opacity: 80%;
+}
+
+#carritoList {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.productoItem{
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+}
+.productoItem img{
+    width: 30px;
+    height: 30px;
+}
+.productoItem button{
+    width: 30px;
+    height: 30px;
+}

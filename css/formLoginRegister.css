@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: brown;
+}
+h2{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+}
+#form {
+    margin: auto;
+    width: 30%;    
+    padding: 100px 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+#form input{
+    margin: 10px 0px;
+}
+
+#container-button{
+    margin: auto;
+}
+
+#container-button button {
+    padding: 0px 20px;
+}

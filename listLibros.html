@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navegacion.css">
+
+    <link rel="stylesheet" href="./css/list-libros-autor.css">
+    <link rel="stylesheet" href="./css/libros-view.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-inicio">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            
+        </ul>
+        <ul class="right-nav">
+            <li id="carrito" onclick="onClickCarrito()"><i class="fi fi-ss-shopping-cart-add"></i> Productos</li>
+            <ul id="carritoList"></ul>
+        </ul>
+    </nav>
+
+    <h1 id="title-book-page">Libros del Autor</h1>
+
+    <section id="list-libro-autor">
+
+    </section>
+    <script src="./js/cardLibro.js"></script>
+    <script src="./js/carritoFunctions.js"></script>
+</body>
+</html>

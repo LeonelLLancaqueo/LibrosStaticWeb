@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+#title-book-page{
+  margin: 10px auto;
+}
+
+
+
+
+#list-libro-autor{
+    width: 90%;
+    margin: 10px  auto;
+    display:grid;
+    grid-template-columns: repeat(3, 25%);
+    
+    grid-column: 10px;
+    
+
+}
+.card-libro{
+    text-align: center;
+    background-color: cadetblue;
+    transition: transform .5s;
+    margin: auto 10px;
+    padding: 10px 0px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+      content: '';
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    &:hover,
+    &:focus {
+      transform: scale3d(1.006, 1.006, 1);
+  
+      &::after {
+        opacity: 1;
+      }
+    }
+    
+}
+
+.card-libro img{
+  
+  width: 200px;
+  height: 250px;
+}
+.card-libro p{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contador{
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.contador h4{
+  padding: 5px;
+  margin: 0px 5px;
+}
+.contador button{
+  padding: 5px 10px;
+
+}

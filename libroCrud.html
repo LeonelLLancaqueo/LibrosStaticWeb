@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabla.css">
+    <link rel="stylesheet" href="../css/form-create.css">
+    <link rel="stylesheet" href="../css/dialog-delete.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/navegacion.css">
+    <link rel="stylesheet" href="../css/searchSeaction.css">
+   
+    <title>Libros</title>
+</head>
+<body>
+    <nav class="nav-inicio">
+        <ul>
+
+            <li><a href="./autorCrud.html">Autores</a></li>
+            <li><a href="./libroCrud.html">Libros</a></li>
+            <li><a href="./generoCrud.html">Generos</a></li>
+        </ul>
+        <ul id="ul-session">
+            <li id="login-li"><a href="./login.html">Iniciar sesion</a></li>
+            <li id="register-li"><a href="./register.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <section class="search-section">
+            <h4>Busqueda</h4>
+            <label for="">Genero <input id="checkGenero" type="checkbox"></label>
+            <select id="selectGenero"></select>
+            <label >Precio <input id="checkPrecio" type="checkbox"></label>
+            <label for=""> x > <input id="inputPrecioMin" type="number" min="0" max="1000"></label>
+            <label for=""> x < <input id="inputPrecioMax" type="number" min="0" max="10000"> </label>
+            
+            <label for="">Unidades en total <input id="checkCantUnidades" type="checkbox"></label>
+            <label for=""> x > <input id="inputUnidTotalMin" type="number" min="0" max="1000"></label>
+            <label for=""> x < <input id="inputUnidTotalMax" type="number" min="0" max="1000"> </label>
+            <label for="">Cantidad Vendida <input id="checkCantVendidas" type="checkbox"></label>
+            <label for=""> x > <input id="inputUnidVendMin" type="number" min="0" max="1000"></label>
+            <label for=""> x < <input id="inputUnidVendMax" type="number" min="0" max="1000"> </label>
+            <label for="">Cantidad Disponible <input id="checkCantDisponible" type="checkbox"></label>
+            <label for=""> x > <input id="inputUnidDispMin" type="number" min="0" max="1000"></label>
+            <label for=""> x < <input id="inputUnidDispMax" type="number" min="0" max="1000"></label>
+            
+            <button onclick="onClickBuscar()"> buscar</button>
+        </section>
+        <table class="tabla-crud">
+            
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>genero</th>
+                <th>autor</th>
+                <!--<th>url</th>-->
+                <!-- <th>descripcion</th>-->
+                <th>precio</th>
+                <th>unidadesEnTotal</th>
+                <th>unidadesDisponibles</th>
+                <th>unidadesVendidas</th>
+                <th><button class="button-create" onclick="abrirFormLibro()">Create</button></th>
+            </tr>
+            </thead>
+            <tbody id="bodyTablaLibros">
+                
+    
+            </tbody>
+    
+        </table>
+    </div>
+    
+    <dialog id="dialog-form">
+        <div  class="form-create" hidden="true">
+            <h3>Añadir/Update Libro</h3>
+            <label for="">Nombre</label>
+            <input id="nombreInput" type="text">
+            <label for="">Genero</label>
+            <select id="listGeneroInput"> </select>
+            <label for="">Autor</label>
+            <select id="listAutorInput"> </select>
+            <label for="">descripcion</label>
+            <textarea  id="descripcionInput"></textarea>
+            <label for="">url</label>
+            <input id="urlInput" type="text">
+            
+            <label for="">precio</label>
+            <input id="precioInput" type="text">
+            
+            <label for="">unidadesEnTotal</label>
+            <input id="uTInput" type="text">
+            
+            <label for="">unidadesDisponibles</label>
+            <input id="uDInput" type="text">
+            
+            <label for="">unidadesVendidas</label>
+            <input id="uVInput" type="text">
+            <div class="form-container-button">
+                <button type="button" id="close-button" onclick="cerrarFormLibro()">Cerrar</button>
+                <button type="button" id="form-send-button" onclick="handleSendButtonForm()">Enviar</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="dialog-delete">
+        <label for="">¿Desea Eliminar?</label>
+        <div id="container-delete-button">
+            <button onclick="closeDeleteModal()">Cancelar</button>
+            <button onclick="onClickDeleteButton()" >Eliminar</button>
+        </div>
+        
+    </dialog>
+    <script src="./js/traerLibros.js"></script>
+    <script src="./js/libroFunctions.js"></script>
+    <script src="./js/session.js"></script>
+
+</body>
+</html>

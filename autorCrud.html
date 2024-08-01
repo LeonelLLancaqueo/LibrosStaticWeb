@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+    <link rel="stylesheet" href="./css/tabla.css">
+    <link rel="stylesheet" href="./css/form-create.css">
+    <link rel="stylesheet" href="./css/dialog-delete.css">
+    <link rel="stylesheet" href="./css/navegacion.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/searchSeaction.css">
+
+    
+</head>
+<body>
+   
+    <nav class="nav-inicio">
+        <ul>
+            <li><a href="./autorCrud.html">Autores</a></li>
+            <li><a href="./libroCrud.html">Libros</a></li>
+            <li><a href="./generoCrud.html">Generos</a></li>
+        </ul>
+        <ul id="ul-session">
+            <li id="login-li"><a href="./login.html">Iniciar sesion</a></li>
+            <li id="register-li"><a href="./register.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <section class="search-section">
+            <h4>Busqueda</h4>
+            <label for="">Nacionalidad</label>
+            <select id="selectNacionalidad">
+                <option value="todos" selected>Todos</option>
+                <option value="argentino" >Argentino</option>
+                <option value="colombiano" >Colombiano</option>
+                <option value="uruguayo" >Uruguayo</option>
+            </select>
+            <button onclick="onClickBuscar()"> buscar</button>
+        </section>
+        <table class="tabla-crud">
+            
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>nacionalidad</th>
+                    <th>url_imagen</th>
+                    <th>descripcion</th>
+                    <th><button class="button-create" onclick="abrirFormAutor()">Create</button></th>
+                </tr>
+            </thead>
+            <tbody id="bodyTablaAutores">
+                
+    
+            </tbody>
+    
+        </table>
+    </div>
+    
+    <dialog id="dialog-form">
+        <div  class="form-create" hidden="true">
+            <h3>Añadir/Update Autor</h3>
+            <label for="">Nombre</label>
+            <input id="nombreInput" type="text">
+            <label for="">Nacionalidad</label>
+            <input id="nacionalidadInput" type="text">
+            <label for="">url image</label>
+            <input id="urlImgInput" type="text">
+            <label for="">descripcion</label>
+            <textarea id="descripcionInput" ></textarea>
+            <div class="form-container-button">
+                <button type="button" id="close-button" onclick="cerrarFormAutor()">Cerrar</button>
+                <button type="button" id="form-send-button" onclick="handleSendButtonForm()">Enviar</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="dialog-delete">
+        <label for="">¿Desea Eliminar?</label>
+        <div id="container-delete-button">
+            <button onclick="closeDeleteModal()">Cancelar</button>
+            <button onclick="onClickDeleteButton()" >Eliminar</button>
+        </div>
+        
+    </dialog>
+
+    
+
+    <script src="./js/traerAutores.js"></script>
+    <script src="./js/autorFunctions.js"></script>
+    <script src="./js/session.js"></script>
+
+
+    
+</body>
+</html>

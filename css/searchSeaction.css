@@ -1,0 +1,25 @@
+#container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.search-section {
+    color: aliceblue;    
+    margin: 20px 40px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-section input{
+    margin: 5px 0px;
+}
+
+.search-section select{
+    margin: 10px 0px;
+}
+
+.search-section button{
+    margin: 5px auto;
+}
