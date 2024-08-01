@@ -149,9 +149,6 @@ function handleSendButtonForm(){
 
 function onClickUpdateButton(id, nombre, genero, autor, url, descripcion, precio, uT, uD, uV){
 
-    let generoSeleccionado = document.getElementById("listGeneroInput").textContent.trimStart().trimEnd();
-    let autorSeleccionado = document.getElementById("listAutorInput").textContent.trimStart().trimEnd();
-
     const libroDto= {"idLibro": id, "nombre": nombre, "genero":genero,"autor":autor ,"url": url, "descripcion":descripcion, "precio": precio, "unidadesEnTotal":uT, "unidadesDisponibles": uD, "unidadesVendidas":uV};
     //console.log(libroDto);
     
