@@ -1,6 +1,6 @@
 
 const tbodyLibros= document.getElementById("bodyTablaLibros");
-const dataList= document.getElementById("listGeneroInput");
+const selectGeneroForm= document.getElementById("formSelectGenero");
 const selectSearchGenero= document.getElementById("selectGenero");
 const selectAutor= document.getElementById("listAutorInput");
 
@@ -261,7 +261,7 @@ function processListGenero(listGenero){
         let opcion= document.createElement("option");
         opcion.text= genero.nombre;
         opcion.value= genero.idGenero;    
-        dataList.appendChild(opcion);
+        selectGeneroForm.appendChild(opcion);
         selectSearchGenero.appendChild(opcion);
     });
 }
